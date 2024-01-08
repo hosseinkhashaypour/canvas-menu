@@ -1,0 +1,114 @@
+:root {
+    --headcolor: #3a5aff;
+    --fontlale: lalezar;
+    --fontirs: irs;
+    --fontbahman: bahman;
+    --bodycolor: #000622;
+    --bodycolor2: #EBB40F;
+    --mfd: @media(min-width:300px);
+    --color3: #D45814;
+    --color4: #1C39BB;
+    --color5: #00A693;
+    --colorw: white;
+    --color6: #112478;
+    --secondbody: #bebebe;
+    --hcolor: #1e293b;
+    --color6-7: #000039;
+}
+
+@font-face {
+    font-family: lalezar;
+    src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+    font-family: bahman;
+    src: url(Bahman\ 1.ttf);
+}
+
+body {
+    background: #e5e5e5 !important;
+}
+
+h2,
+header {
+    text-align: center;
+    color: white !important;
+    font-family: var(--fontirs);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+@media (min-width:300px){
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 23px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        font-family: var(--fontirs);
+    
+    }
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:300px) {
+    .imglogo {
+        width: 63px;
+        display: flex;
+        margin-left: 69px;
+        margin-top: -41px;
+        border-radius: 50%;
+    }
+}
+@media (min-width:300px){
+    #mySidenav{
+        font-family: var(--fontirs);
+
+    }
+}
